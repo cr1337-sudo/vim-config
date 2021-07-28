@@ -1,0 +1,40 @@
+    facebook = models.URLField("Facebook"),V
+<input type="checkbox" class="auto" id="auto" checked><label class="auto-rotate" for="auto">Auto &#x21bb;</label><br><span class="anticlockwise">&#x2190;</span><span class="clockwise">&#x2192;</span><div class="rotate"></div>,V
+eng,v
+    web=models.UrlField("WEB", null=True, blank=True),V
+https://www.youtube.com/c/Developerpe/playlists,v
+    return redirect(request, "delete_task.html",context),V
+<p>Are you sure you want to delete "{{item}}"?</p><a href="{% url 'list' %}" >Cancel</a><form method="POST" action="">	{% csrf_token %}	<input type="submit" name="Confirm"></form>,v
+<h3>Update Task</h3><form method="POST" action="">	{% csrf_token %}	{{form}}	<input type="submit" name="Update Task">		</form>,v
+let g:python3_host_prog=/path/to/python/executable/,V
+nnoremap <F3> :Autoformat<CR>,V
+noremap <F3> :Autoformat<CR>,v
+Plugin 'Chiel92/vim-autoformat',v
+let g:python3_host_prog=/path/to/python/executable/,v
+{% csrf_token %},v
+,V
+    <h1>Hello, world!</h1>,V
+    form= TaskForm(),V
+git remote add origin https://github.com/cr1337-sudo/to-do-app.git,v
+class Todo(models.Model):    added_date = models.DateField(verbose_name="Fecha")    text = models.CharField(max_length=50),v
+HttpResponse("Hello World"),v
+include,v
+from django.contrib import admin,V
+    path("", include("todoapp.urls")),V
+    path('admin/', admin.site.urls),,V
+""",V
+    path("", Index),V
+    return render(request, "index.html"),V
+def View(request):,V
+    path("", View, name="index"),V
+from todo.views import View,V
+from .urls import View,V
+<!doctype html><html lang="en">  <head>    <!-- Required meta tags -->    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- Bootstrap CSS -->    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    <title>Hello, world!</title>  </head>  <body>    <h1>Hello, world!</h1>    <!-- Optional JavaScript; choose one of the two! -->    <!-- Option 1: Bootstrap Bundle with Popper -->    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>    <!-- Option 2: Separate Popper and Bootstrap JS -->    <!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>    -->  </body></html>,V
+http://127.0.0.1:8000/,v
+from django.db import models# Create your models here.class Todo(models.Model):    added_date = models.DateField(verbose_name="Fecha")    text = models.CharField(max_length=50),v
+nnoremap <leader>n :NERDTree<CR>,V
+ ,v
+    25 de mayo 125 10mo pisopreguntar por daniel 14 entrevista multigroup miercoles,v
+    25 de mayo 125 10mo pisopreguntar por daniel 14 entrevista multigroup miercoles,V
+syntax onset relativenumberset numberset mouse=aset expandtabset smartindentset sw=2set numberwidth=1set nowrapset noswapfileset nobackupset incsearchset ignorecaseset clipboard=unnamedplusset encoding=utf-8set cursorlineset termguicolors,V
+Plug 'davidhalter/jedi-vim',V
