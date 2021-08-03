@@ -25,6 +25,10 @@ Plug 'bagrat/vim-buffet'
 Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
 
 " Initialize plugin system
 call plug#end()
@@ -37,7 +41,7 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 "LIsta de buffers
 nnoremap <leader>b :Buffers<Cr>  
 "Cierrael buffer actual
-nnoremap  <C-w> :bd!<Cr> 
+nnoremap <C-w> :bd<Cr> 
 "Muestralos archivos y deja bucar por nombre
 nnoremap <C-p> :Files<Cr>
 nmap <C-n> :NERDTreeToggle<CR>
