@@ -1,9 +1,3 @@
-let mapleader = " " 
-set encoding=UTF-8
-
-"Inicio de plugins
-call plug#begin('~/.config/nvim/plugged')
-	
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
@@ -18,20 +12,26 @@ Plug 'prettier/vim-prettier', {
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'morhetz/gruvbox'
+Plug 'artanikin/vim-synthwave84'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug '907th/vim-auto-save'
 Plug 'bagrat/vim-buffet'
-Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'ryanoasis/vim-devicons'
+Plug 'hail2u/vim-css3-syntax'
 
 " Initialize plugin system
 call plug#end()
+
+let g:python3_host_prog = 'C:\Users\kkk\AppData\Local\Programs\Python\Python37\python'
+
+
+
 
 " map CTRL-E to end-of-line (insert mode) 
 imap <C-e> <esc>$i<right>
@@ -57,6 +57,7 @@ nmap <leader>6 <Plug>BuffetSwitch(6)
 nmap <leader>7 <Plug>BuffetSwitch(7)
 nmap <leader>8 <Plug>BuffetSwitch(8)
 nmap <leader>9 <Plug>BuffetSwitch(9)
+
 
 noremap <Tab> :bn<CR>
 
@@ -103,7 +104,8 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme gruvbox
+
+colorscheme synthwave84
 
 " coc config
 let g:coc_global_extensions = [
@@ -201,9 +203,6 @@ xmap af <Plug>(coc-funcobj-a)
 omap if <Plug>(coc-funcobj-i)
 omap af <Plug>(coc-funcobj-a)
 
-" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
-nmap <silent> <C-d> <Plug>(coc-range-select)
-xmap <silent> <C-d> <Plug>(coc-range-select)
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
@@ -234,3 +233,4 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
