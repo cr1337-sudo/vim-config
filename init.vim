@@ -26,8 +26,8 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug '907th/vim-auto-save'
@@ -39,11 +39,17 @@ Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ryanoasis/vim-devicons'
 Plug 'hail2u/vim-css3-syntax'
+
 Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'frazrepo/vim-rainbow'
+
 Plug 'ap/vim-buftabline'
 Plug 'voldikss/vim-floaterm'
+
+Plug 'tpope/vim-commentary'
 
 
 " Initialize plugin system
@@ -52,8 +58,12 @@ call plug#end()
 
 let g:python3_host_prog = 'C:\Users\kkk\AppData\Local\Programs\Python\Python37\python'
 
+"Color scheme and lightline
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
+
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
 
 
 
@@ -70,6 +80,18 @@ nnoremap <C-w> :bd<Cr>
 nnoremap <C-p> :Files<Cr>
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <Leader>py <Plug>(Prettier)
+
+"Comentarios
+noremap <leader>c :Commentary<cr>
+"gcgc descomenta el ultimo comment
+"gcc comenta la linea
+
+
+"Rainbow pair
+au FileType html,css,js,ts,jsx call rainbow#load()
+let g:rainbow_active = 1
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
+
 
 
 "Float term
