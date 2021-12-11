@@ -9,10 +9,15 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
+"Ignore this on Linux!!!
+let g:python3_host_prog='C:/Usuarios/kkk/AppData/Local/Programs/Python/Python37/python.exe'
+
+
 
 "Inicio de plugins
 
-call plug#begin()
+"CHANGE THIS ON LINUX!!!
+call plug#begin(stdpath('data') . '/plugged')
 	
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
@@ -22,12 +27,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'prettier/vim-prettier', { 'do': 'npm install --frozen-lockfile --production' }
 
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug '907th/vim-auto-save'
@@ -79,6 +82,7 @@ nnoremap <C-w> :bd<Cr>
 "Muestralos archivos y deja bucar por nombre
 nnoremap <C-p> :Files<Cr>
 nmap <C-n> :NERDTreeToggle<CR>
+
 nmap <Leader>py <Plug>(Prettier)
 
 "Comentarios
@@ -323,5 +327,3 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 "
 let g:closetag_close_shortcut = '<leader>>'
-
-
